@@ -1,0 +1,56 @@
+﻿<Window x:Class="_2fa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2fa"
+        mc:Ignorable="d"
+        Title="Uygulama" Height="550"   MaxHeight="550"  MaxWidth="900" MinHeight="550" MinWidth="900"  Width="900">
+
+    <DockPanel LastChildFill="False" x:Name="panel">
+
+        <DockPanel.Background>
+            <SolidColorBrush Color="#FF1C61AB"/>
+        </DockPanel.Background>
+        <Frame x:Name="frame" NavigationUIVisibility="Hidden" ></Frame>
+        <Grid x:Name="giris" Width="899">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="112*"/>
+                <RowDefinition Height="215*"/>
+                <RowDefinition Height="226*"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="parola" HorizontalAlignment="Left" Margin="624,170,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="28" FontSize="20"/>
+            <Label Content="Parola" HorizontalAlignment="Left" Margin="624,137,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Foreground="#FFFDFCFC"/>
+            <Label Content="Ad:" HorizontalAlignment="Left" Margin="624,63,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="14" Foreground="#FFFDFCFC"/>
+            <TextBox x:Name="ad" HorizontalAlignment="Left" Margin="624,89,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="27" FontSize="20"/>
+            <Ellipse HorizontalAlignment="Left" Height="126" Margin="87,58,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="124">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF18B195" Offset="1"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" Height="126" Margin="162,58,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="124">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF1CE2BE" Offset="0.469"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse HorizontalAlignment="Left" Height="126" Margin="124,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="124" Grid.RowSpan="2">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF20EDC7" Offset="0.629"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Button Content="Giris Yap"  HorizontalAlignment="Left" Margin="631,31,0,0" Grid.Row="2" VerticalAlignment="Top" Height="69" Width="192" IsDefault="True" FontSize="18" Click="Button_Click"/>
+            <Label Content="2fa Kimlik doğrulama uygulaması" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
+        </Grid>
+    </DockPanel>
+
+</Window>
+

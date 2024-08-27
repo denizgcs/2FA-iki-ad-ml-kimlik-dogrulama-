@@ -1,0 +1,40 @@
+﻿<Page x:Class="_2fa.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_2fa"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="900"
+      Title="Page1" Height="550" Width="900">
+
+    <Grid x:Name="grid"  Loaded="grid_Loaded" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <DockPanel LastChildFill="False" Background="#FF2A4C98" Margin="0,0,8,0" RenderTransformOrigin="0.5,0.5">
+            <DockPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </DockPanel.RenderTransform>
+            <Button Content="onayla" DockPanel.Dock="Bottom" Margin="100px" Height="70" Width="206" Click="Button_Click"/>
+            <Label Content="Emalinize göderilen kodu girin" Height="54" Margin="20px" DockPanel.Dock="Top" Width="277" Background="{x:Null}" FontSize="20" Foreground="White" />
+            <Grid Width="306" Height="79" DockPanel.Dock="Top">
+
+                <TextBox x:Name="textbox_1"  HorizontalAlignment="Left" Margin="82,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" Height="32" FontSize="18" RenderTransformOrigin="2.995,0.403"/>
+            </Grid>
+
+
+        </DockPanel>
+    </Grid>
+</Page>
+
